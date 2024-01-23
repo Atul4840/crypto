@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    color:  #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #191D28;
+ 
+}
+
+h2{
+   color:  #59BCBA;
+}
+
+p{
+  color: #7C7E85;
+}
+
+.header{
+    display: flex;
+    justify-content:space-between;
+    padding: 25px;
+    background-color: #191D28;
+} 
+
+
+.btn-group{
+     display: flex;
+     gap: 15px;
+}
+
+.btn-colo{
+    background: #2E3241 !important;
+}
+
+.header-feature{
+    display: flex;
+    gap: 12px;
+    text-align: center;
+    align-items: center;
+
+}
+
+.header-feature .timer
+{
+   
+    height: 30px;
+    width: 30px;
+    border: 2px solid #59BCBA;
+    text-align: center;
+    padding: 1px;
+    border-radius: 50%;
+}
+
+.sec-data{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.sec-data .bpt{
+    text-align: center;
+}
+
+.sec-data .bpt h1{
+     text-align: center;
+        font-weight: 400;
+    font-size: 80px;
+}
+
+.table-parent{
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+   
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: 20px;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #191D28;
+  }
+  
+  
+  
+
+  tr {
+    background-color: #2E3241;
+    margin-bottom: 10px;
+    border-radius: 60px; /* Set the border-radius to make corners rounded */
+    overflow: hidden; /* Ensure rounded corners are visible */
+  }
+
+  .footer{
+     display: flex;
+     justify-content: space-between;
+  }
+
+
+/* .tele-button{
+      position: relative;
+}
+
+.tele-button img {
+     position: absolute;
+     top: 17px;
+
+} */
+
+
+
+
+
