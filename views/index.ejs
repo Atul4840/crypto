@@ -48,7 +48,7 @@
                     BTC </button>
                 <ul class="dropdown-menu">
                     <% for (item of data) { %>
-                        <li><a class="dropdown-item" href="/hasir/<%= item.name %>"><%= item.name.replace('-INR', '') %></a></li>
+                        <li><a class="dropdown-item" href="/hodelinfo/<%= item.name %>"><%= item.name.replace('-INR', '') %></a></li>
                     <% } %>
                     <!-- <li><a class="dropdown-item" href="#">Another action</a></li>
                     <li><a class="dropdown-item" href="#">Something else here</a></li> -->
@@ -187,8 +187,6 @@
 
                 // Update the content of the element with the new buy price
                 $("#buy-price-value").text(averagePrice.toLocaleString('en-IN'));
-                // Log the response in the console
-                // console.log('res', buyPrice);
                 console.log("res",buyPrice)
             } catch (error) {
                 console.error('Error fetching data:', error.message);
