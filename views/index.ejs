@@ -66,9 +66,9 @@
 
         <div class="header-feature">
 
-            <div class="timer">
+            <!-- <div class="timer">
                 <p id="timer">60</p>
-            </div>
+            </div> -->
 
             <div class="tele-button">
                 <button type="button" style="background: #2E3241;" class="btn btn-secondary">
@@ -181,12 +181,15 @@
 
 
                 const buyPrice = request.data.buy;
-
+                const sellPrice = request.data.sell;
+               
+                const averagePrice = (buyPrice+sellPrice)/2
 
                 // Update the content of the element with the new buy price
-                $("#buy-price-value").text(buyPrice.toLocaleString('en-IN'));
+                $("#buy-price-value").text(averagePrice.toLocaleString('en-IN'));
                 // Log the response in the console
                 // console.log('res', buyPrice);
+                console.log("res",buyPrice)
             } catch (error) {
                 console.error('Error fetching data:', error.message);
             }
