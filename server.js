@@ -105,7 +105,7 @@ setInterval(fetchAndUpdateData, 60000);
 
 // Initial fetch and store (optional, depending on your use case)
 
-app.get("/hasir/:name", async (req, res) => {
+app.get("/hodelinfo/:name", async (req, res) => {
   let { name } = req.params;
 
   try {
